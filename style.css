@@ -33,3 +33,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* voir pour resizer avec le reste*/
+
+form {
+margin: calc(var(--spacing) * 8);
+padding: var(--spacing);
+}
+
+label{
+  font-size: var(--font-size-standard);
+  font-family: var(--text-font);
+  color: var(--quaternary-color);
+  margin: var(--spacing);
+}
+
+#submit {
+  padding: 5px 15px 5px 15px; 
+  font-size: var(--font-size-standard);
+  font-family: var(--text-font);
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  margin-left: 5rem;
+  margin-bottom: 5em;
+} /*rajouter animation du bouton et le js*/
+
+input, textarea {
+  border-radius: 10px;
+  border: none;
+  background-color: #D7D7D7;
+  margin: var(--spacing);
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+#name , #email, #textarea {
+  width: 40%;
+}
