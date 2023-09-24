@@ -33,3 +33,64 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+footer {
+  background-color: var(--primary-color);
+  width: 100vw; 
+  height: 10%;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.links {
+  width: 100vw; 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center;
+} 
+
+.lien {
+  width: calc(100% / 4); 
+  height: 100%;
+  padding: 5%;
+}
+
+footer div div img {
+  width: 90%;
+}
+
+.wildcodeschool {
+  padding: 0%;
+}
+
+.adresse_copyright {
+  display: none;
+}
+
+@media screen and (min-width:360px) {
+  
+  .adresse_copyright {
+    font-family: var(--header-font);
+    width: 100%;
+    display:flex; 
+    justify-content: space-between; 
+  }
+
+  #adress {
+    align-items: center;
+    height: 100%;
+    padding: 5%;
+  }
+
+  #copyright {
+    width: calc(100% / 2);
+    padding: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 0%;
+  }
+
+}
