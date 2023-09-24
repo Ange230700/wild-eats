@@ -55,9 +55,13 @@ label{
   color: var(--tertiary-color);
   background-color: var(--secondary-color);
   border: none;
-  margin-left: 5rem;
-  margin-bottom: 5em;
-} /*rajouter animation du bouton et le js*/
+  margin-top: 2rem;
+
+} /*rajouter js pop-up*/
+ #submit:hover {
+  background-color: var(--hover-color);
+  color: var(--secondary-color);
+}
 
 input, textarea {
   border-radius: 10px;
@@ -72,5 +76,5 @@ textarea {
 }
 
 #name , #email, #textarea {
-  width: 40%;
+  width: 50vw;
 }
