@@ -57,7 +57,7 @@ label{
   border: none;
   margin-top: 2rem;
 
-} /*rajouter js pop-up*/
+} /*rajouter js pop-up et media queries voir si importation navbar et footer*/
  #submit:hover {
   background-color: var(--hover-color);
   color: var(--secondary-color);
