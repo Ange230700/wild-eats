@@ -11,7 +11,7 @@
   /* neutral colors */
   --white: #fff;
   --black: #000;
-  --hover-color: #e4e4e4;
+  --active-color: #e4e4e4;
 
   /* font-family */
   --text-font: "Mulish", sans-serif;
@@ -33,4 +33,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font);
+  line-height: var(--line-height-standard);
 }

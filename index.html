@@ -12,14 +12,64 @@
     </nav>
     <section class="hero">
       <img src="" alt="heroImage" />
-      <h1>Phrase d'accroche</h1>
+      <h1></h1>
     </section>
     <main>
       <section class="cards"></section>
       <section class="typesMobile">
-        <button>Types</button>
-        <button>Prix</button>
-        <button>Notes</button>
+        <div class="dropdown">
+          <button class="types">Types</button>
+          <ul class="dropdown-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="11"
+              viewBox="0 0 18 11"
+              fill="none"
+            >
+              <path d="M9 0L17.6603 10.5H0.339746L9 0Z" fill="#92817A"></path>
+            </svg>
+            <li><button>Italien</button></li>
+            <li><button>Asiatique</button></li>
+            <li><button>Végétarien</button></li>
+            <li><button>Bistro</button></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="prices">Prix</button>
+          <ul class="dropdown-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="11"
+              viewBox="0 0 18 11"
+              fill="none"
+            >
+              <path d="M9 0L17.6603 10.5H0.339746L9 0Z" fill="#92817A"></path>
+            </svg>
+            <li><button>€</button></li>
+            <li><button>€€</button></li>
+            <li><button>€€€</button></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="reviews">Notes</button>
+          <ul class="dropdown-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="11"
+              viewBox="0 0 18 11"
+              fill="none"
+            >
+              <path d="M9 0L17.6603 10.5H0.339746L9 0Z" fill="#92817A"></path>
+            </svg>
+            <li><button>⭐</button></li>
+            <li><button>⭐⭐</button></li>
+            <li><button>⭐⭐⭐</button></li>
+          </ul>
+        </div>
       </section>
       <section class="typesDesktop"></section>
       <section class="map"></section>
