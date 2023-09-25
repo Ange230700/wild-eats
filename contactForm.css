@@ -1,0 +1,44 @@
+/* voir pour resizer avec le reste*/
+
+form {
+    margin: calc(var(--spacing) * 8);
+    padding: var(--spacing);
+    }
+    
+    label{
+      font-size: var(--font-size-standard);
+      font-family: var(--text-font);
+      color: var(--quaternary-color);
+      margin: var(--spacing);
+    }
+    
+    #submit {
+      padding: 5px 15px 5px 15px; 
+      font-size: var(--font-size-standard);
+      font-family: var(--text-font);
+      color: var(--tertiary-color);
+      background-color: var(--secondary-color);
+      border: none;
+      margin-top: 2rem;
+    
+    } /*rajouter js pop-up et media queries voir si importation navbar et footer*/
+     #submit:hover {
+      background-color: var(--hover-color);
+      color: var(--secondary-color);
+    }
+    
+    input, textarea {
+      border-radius: 10px;
+      border: none;
+      background-color: #D7D7D7;
+      margin: var(--spacing);
+      padding: 10px;
+    }
+    
+    textarea {
+      resize: none;
+    }
+    
+    #name , #email, #textarea {
+      width: 50vw;
+    }
