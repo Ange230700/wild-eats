@@ -38,4 +38,27 @@
 body {
   font-family: var(--text-font);
   line-height: var(--line-height-standard);
+  font-size: var(--font-size-standard);
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  height: 3.75rem;
+}
+
+.hero {
+  height: 32.9375rem;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  height: 3.75rem;
+}
+
+aside {
+  display: none;
 }
