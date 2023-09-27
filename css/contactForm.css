@@ -1,11 +1,28 @@
 /* voir pour resizer avec le reste*/
 
-form {
-    margin: calc(var(--spacing) * 8);
+ header {
+  background: var(--secondary-color, #92817A);
+  color: var(--tertiary-color);
+  font-family: var(--header-font);
+  height: 30vh;
+  --font-size-title: calc(var(--font-size-standard) * 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+section > form {
+    margin-top: calc(var(--spacing) * 8);
     padding: var(--spacing);
+}
+
+    section {
+      display: flex;
+      justify-content: center;
     }
-    
-    label{
+
+
+    label {
       font-size: var(--font-size-standard);
       font-family: var(--text-font);
       color: var(--quaternary-color);
@@ -46,4 +63,14 @@ form {
     }
     
 
-     
+     @media screen and (max-width: 360px) {
+
+    h1 { 
+      font-size: 1.2em;
+
+    }
+    label {
+      font-size: 15px ;
+    }
+
+     }

@@ -51,8 +51,8 @@ body {
 
 @media screen and (600px < width) {
   body {
-    display: grid;
-    grid-template-areas: 
+    /*display: grid;
+   /* grid-template-areas: 
       "nav nav nav"
       "hero hero hero"
       "aside main main"
