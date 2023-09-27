@@ -20,6 +20,8 @@ form {
       background-color: var(--secondary-color);
       border: none;
       margin-top: 2rem;
+      display: block;
+
     
     } /*rajouter js pop-up et media queries voir si importation navbar et footer*/
      #submit:hover {
@@ -42,3 +44,6 @@ form {
     #name , #email, #textarea {
       width: 50vw;
     }
+    
+
+     
