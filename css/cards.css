@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
-@import url("style.css");
+
 
 .cards{
     margin: auto;
@@ -10,6 +10,7 @@
     flex-direction: column;
     flex-wrap: inherit;
 
+    margin-top: calc(var(--spacing)*2);
     border-radius: 10px;
     width: 90%;
     height: 250px; 
@@ -41,35 +42,36 @@
 
 .block-card-text{
     padding: calc(var(--spacing)* 1.2) calc(var(--spacing)*1.2);
-
 }
 
 .restaurant-title{
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
 }
 
-.card-adress, .card-takeaway{
+.card-adress {
+    font-size: 0.8rem;    
+}
+
+.card-takeaway{
     font-size: 0.8rem;
 }
 
 .fa-link {
-    color: black;
+    color: var(--secondary-color);
 }
 
-
 .fa-link:hover{
-    color: #92817a;
+    color: #9f9d9c;
 }
 
 .box-title-euro-link{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 
 .box-takeaway-icon-text{
-    display: flex;
-  
+    display: flex; 
 }
 
 .fa-square-check{
