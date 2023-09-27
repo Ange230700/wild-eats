@@ -1,3 +1,4 @@
+@import url("./css/map.css");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
 
 :root {
@@ -35,62 +36,43 @@
 }
 
 
-footer {
-  background-color: var(--primary-color);
-  width: 100vw; 
-  height: 10%;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center;
+body {
+  font-family: var(--text-font);
+  font-size: var(--font-size-standard);
+  line-height: var(--line-height-standard);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.links {
-  width: 100vw; 
-  display: flex; 
-  justify-content: space-around; 
-  align-items: center;
-} 
-
-.lien {
-  width: calc(100% / 4); 
-  height: 100%;
-  padding: 5%;
-}
-
-footer div div img {
-  width: 90%;
-}
-
-.wildcodeschool {
-  padding: 0%;
-}
-
-.adresse_copyright {
-  display: none;
-}
-
-@media screen and (min-width:360px) {
-  
-  .adresse_copyright {
-    font-family: var(--header-font);
-    width: 100%;
-    display:flex; 
-    justify-content: space-between; 
+@media screen and (600px < width) {
+  body {
+    display: grid;
+    grid-template-areas: 
+      "nav nav nav"
+      "hero hero hero"
+      "aside main main"
+      "footer footer footer";
+    grid-template-rows: 7.875rem calc(100vh - 9rem) 1fr 5.125rem;
   }
 
-  #adress {
-    align-items: center;
-    height: 100%;
-    padding: 5%;
+  nav {
+    grid-area: nav;
+    height: 7.875rem;
   }
 
-  #copyright {
-    width: calc(100% / 2);
-    padding: 5%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-bottom: 0%;
+  .hero {
+    grid-area: hero;
+    height: calc(100vh - 9rem);
   }
 
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+    height: 5.125rem;
+  }
 }
+
