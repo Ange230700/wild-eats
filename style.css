@@ -1,4 +1,5 @@
 @import url("./css/map.css");
+@import url("./css/navbar.css");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
 
 :root {
@@ -35,58 +36,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-nav {
-  background-color: var(--primary-color);
-  width: 100vw; 
-  height: 3.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav img {
-  width: 2.75rem;
-  height: 2.75rem;
-  flex-shrink: 0;
-}
-
-nav p {
-  color: var(--black); 
-  font-family: var(--header-font);
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-@media screen and (min-width: 360px) {
-  nav {
-    width: 90rem;
-    height: 7.875rem;
-    flex-shrink: 0;
-    display: flex; 
-    justify-content: flex-start;
-    align-items: center;
-  }
-  nav img {
-    width: 6.99538rem;
-    height: 6.99538rem;
-    flex-shrink: 0;
-    margin: 15px;
-  }
-
-  nav p {
-    width: 6.9375rem;
-    height: 4.25rem;
-    flex-shrink: 0;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-}
-=======
 body {
   font-family: var(--text-font);
   font-size: var(--font-size-standard);
@@ -126,4 +75,3 @@ body {
     height: 5.125rem;
   }
 }
->>>>>>> 5304afbfcc5b1b569a536e76f2ca251b590ff906
