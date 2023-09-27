@@ -1,0 +1,11 @@
+.heroImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/heroImage.png");
+  background-size: cover;
+  background-position: 80%;
+  height: calc(100vh - 10rem);
+  color: var(--white);
+}
