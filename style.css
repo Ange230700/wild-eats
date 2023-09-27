@@ -1,5 +1,6 @@
+@import url("./css/map.css");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
-@import url("contactForm.css");
+@import url("./css/contactForm.css");
 
 
 
@@ -39,4 +40,42 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--text-font);
+  font-size: var(--font-size-standard);
+  line-height: var(--line-height-standard);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+@media screen and (600px < width) {
+  body {
+    display: grid;
+    grid-template-areas: 
+      "nav nav nav"
+      "hero hero hero"
+      "aside main main"
+      "footer footer footer";
+    grid-template-rows: 7.875rem calc(100vh - 9rem) 1fr 5.125rem;
+  }
+
+  nav {
+    grid-area: nav;
+    height: 7.875rem;
+  }
+
+  .hero {
+    grid-area: hero;
+    height: calc(100vh - 9rem);
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+    height: 5.125rem;
+  }
+}
