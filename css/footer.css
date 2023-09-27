@@ -6,17 +6,17 @@ footer {
   }
   
   .links {
-    width: 100vw; 
-    height: 100%;
     display: flex; 
     justify-content: space-around; 
     align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
   } 
   
   .lien {
-    width: calc(100% / 4); 
-    /* height: 100%; */
-    padding: 5%; 
+    width: 2rem; 
+    height: auto; 
+    padding-top: 2%;
   }
   
   footer div div img {
@@ -24,11 +24,12 @@ footer {
   }
   
   .wildcodeschool {
-    padding: 0%;
+    width: 4rem; 
+    height: auto;
   }
   
   .adresse_copyright {
-    /* height: 100%; */
+    height: 100%;
     display: none;
   }
   
@@ -36,24 +37,36 @@ footer {
     
     .adresse_copyright {
       font-family: var(--header-font);
-      width: 100%;
       display:flex; 
       justify-content: space-between; 
-    }
-  
-    #adress {
       align-items: center;
-      height: 100%;
-      padding: 5%;
+      flex-grow: 1;
     }
   
+    .adresse_copyright p {
+      font-size: calc(var(--font-size-standard) * 0.85);
+    }
+    .links {
+      margin-right: calc(var(--spacing) *2);
+    }
+
     #copyright {
       width: calc(100% / 2);
-      padding: 5%;
       display: flex;
+      padding: 5%;
       justify-content: flex-end;
       align-items: flex-end;
       padding-bottom: 0%;
     }
   
+    .lien {
+      width: 4rem; 
+      height: auto; 
+      padding-top: 2%;
+    }
+
+    .wildcodeschool {
+      width: 8rem; 
+      height: auto;
   }
+}
