@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
+@import url("style.css");
+
+.cards{
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: inherit;
+
+    border-radius: 10px;
+    width: 90%;
+    height: 250px; 
+    box-shadow: 0.5px 0.5px 10px  #ddd1bc;
+    background-color: var(--tertiary-color);  
+  }
+
+.block-card-image{
+    height: 60%;
+    position: relative;
+}
+
+.category{
+    position: absolute;
+    right: calc(var(--spacing) * 0.5);
+    bottom: calc(var(--spacing) * 0.5);
+    font-size: calc(var(--font-size-standard)*0.5);
+    padding: calc(var(--spacing)*0.5) calc(var(--spacing)*1.5);
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+}
+
+.restaurant-photo{
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    border-radius: 10px 10px 0px 0px;
+}
+
+.block-card-text{
+    padding: calc(var(--spacing)* 1.2) calc(var(--spacing)*1.2);
+
+}
+
+.restaurant-title{
+    font-size: 1.2rem;
+}
+
+.card-adress, .card-takeaway{
+    font-size: 0.8rem;
+}
+
+.fa-link {
+    color: black;
+}
+
+
+.fa-link:hover{
+    color: #92817a;
+}
+
+.box-title-euro-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-takeaway-icon-text{
+    display: flex;
+  
+}
+
+.fa-square-check{
+    padding-right: calc(var(--spacing) * 0.5);
+}
+
+.box-takeaway-stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*star icon for review*/
+.fa-star{
+    color: #E6C723;
+    font-size: 1rem;
+}
