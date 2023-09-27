@@ -1,3 +1,4 @@
+@import url("./css/map.css");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
 
 :root {
@@ -34,6 +35,7 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 nav {
   background-color: var(--primary-color);
   width: 100vw; 
@@ -84,3 +86,44 @@ nav p {
     line-height: normal;
   }
 }
+=======
+body {
+  font-family: var(--text-font);
+  font-size: var(--font-size-standard);
+  line-height: var(--line-height-standard);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (600px < width) {
+  body {
+    display: grid;
+    grid-template-areas: 
+      "nav nav nav"
+      "hero hero hero"
+      "aside main main"
+      "footer footer footer";
+    grid-template-rows: 7.875rem calc(100vh - 9rem) 1fr 5.125rem;
+  }
+
+  nav {
+    grid-area: nav;
+    height: 7.875rem;
+  }
+
+  .hero {
+    grid-area: hero;
+    height: calc(100vh - 9rem);
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+    height: 5.125rem;
+  }
+}
+>>>>>>> 5304afbfcc5b1b569a536e76f2ca251b590ff906
