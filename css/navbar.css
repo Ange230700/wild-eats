@@ -22,7 +22,7 @@ nav {
     line-height: normal;
   }
   
-  @media screen and (min-width: 360px) {
+  @media screen and (min-width: 600px) {
     nav {
       flex-shrink: 0;
       display: flex; 
