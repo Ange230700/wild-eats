@@ -1,5 +1,6 @@
 @import url("./css/filter.css");
 @import url("./css/filterDesktop.css");
+@import url("./css/map.css");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
 
 :root {
@@ -40,6 +41,7 @@ body {
   font-family: var(--text-font);
   line-height: var(--line-height-standard);
   font-size: var(--font-size-standard);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -83,6 +85,7 @@ footer {
   .hero {
     grid-area: hero;
     height: 48.75rem;
+    height: calc(100vh - 9rem);
   }
 
   main {
