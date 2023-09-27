@@ -1,7 +1,5 @@
 nav {
     background-color: var(--primary-color);
-    width: 100vw; 
-    height: 3.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,39 +8,24 @@ nav {
   nav img {
     width: 2.75rem;
     height: 2.75rem;
-    flex-shrink: 0;
   }
   
   nav p {
-    color: var(--black); 
     font-family: var(--header-font);
     font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
   
   @media screen and (min-width: 600px) {
     nav {
-      flex-shrink: 0;
-      display: flex; 
       justify-content: flex-start;
-      align-items: center;
     }
     nav img {
       width: 6.99538rem;
       height: 6.99538rem;
-      flex-shrink: 0;
-      margin: 15px;
+      margin-left: calc(var(--spacing) * 2.5);
     }
   
     nav p {
-      width: 6.9375rem;
-      height: 4.25rem;
-      flex-shrink: 0;
-      font-size: 3rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+      font-size: calc(var(--font-size-standard) * 3);
     }
   }
