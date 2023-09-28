@@ -1,0 +1,68 @@
+footer {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.lien {
+  width: 2rem;
+  height: auto;
+  padding-top: 2%;
+}
+
+footer div div img {
+  width: 90%;
+}
+
+.wildcodeschool {
+  width: 4rem;
+  height: auto;
+}
+
+.adresse_copyright {
+  height: 100%;
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .lien {
+    width: 4rem;
+  }
+
+  .links {
+    margin-right: calc(var(--spacing) * 2);
+  }
+
+  .wildcodeschool {
+    width: 8rem;
+  }
+
+  .adresse_copyright {
+    font-family: var(--header-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .adresse_copyright p {
+    font-size: calc(var(--font-size-standard) * 0.85);
+  }
+
+  #copyright {
+    width: calc(100% / 2);
+    padding: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 0%;
+  }
+}

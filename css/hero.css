@@ -1,0 +1,94 @@
+.hero h1 {
+  color: var(--white);
+  font-size: 2.7rem;
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+
+#searchButton img {
+  height: 50px;
+  padding: 0.5rem;
+}
+
+.buttonName {
+  display: none;
+}
+
+.hero .search-bar {
+  flex-direction: row;
+}
+
+.heroImage {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/heroImage.png");
+  background-size: cover;
+  background-position: 80%;
+  height: calc(100vh - 10rem);
+  color: var(--white);
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  width: auto;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  height: 3.1rem;
+}
+
+button#searchButton {
+  background-color: #8db596;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0px 17px;
+  height: 3.1rem;
+}
+
+.search-bar {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 4.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .hero img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  #searchButton img {
+    height: 50px;
+    display: none;
+  }
+
+  .buttonName {
+    color: var(--black);
+    font-family: var(--header-font);
+  }
+
+  .hero .search-bar {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* top: 25%;
+    left: 13%; */
+  }
+
+  .buttonName {
+    display: block;
+  }
+}

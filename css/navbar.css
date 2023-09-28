@@ -3,16 +3,31 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+nav img {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+nav p {
+  font-family: var(--header-font);
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    justify-content: flex-start;
   }
-  
+
   nav img {
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 6.99538rem;
+    height: 6.99538rem;
+    margin-left: calc(var(--spacing) * 2);
   }
-  
+
   nav p {
-    font-family: var(--header-font);
-    font-size: 1.25rem;
+    font-size: calc(var(--font-size-standard) * 3);
   }
   
   @media screen and (min-width: 600px) {
@@ -29,3 +44,4 @@ nav {
       font-size: calc(var(--font-size-standard) * 3);
     }
   }
+}
