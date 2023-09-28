@@ -5,6 +5,13 @@
     margin: auto;
 }
 
+@media screen and (min-width: 600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .card{
     display: flex;
     flex-direction: column;
