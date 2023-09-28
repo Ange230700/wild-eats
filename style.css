@@ -78,12 +78,12 @@ main {
       "hero hero hero hero"
       "aside main main main"
       "footer footer footer footer";
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: 10vh auto 1fr auto;
   }
 
   nav {
     grid-area: nav;
-    height: auto;
+    height: 10vh;
   }
 
   .hero {

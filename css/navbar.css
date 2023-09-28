@@ -15,10 +15,23 @@ nav p {
   font-size: 1.25rem;
 }
 
+.logoWE {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 @media screen and (min-width: 600px) {
   nav {
     justify-content: flex-start;
   }
+
+  .logoWE {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   nav img {
     width: 6.99538rem;
     height: 6.99538rem;
@@ -28,11 +41,11 @@ nav p {
   nav p {
     font-size: calc(var(--font-size-standard) * 3);
   }
-  
+
   @media screen and (min-width: 600px) {
     nav {
       flex-shrink: 0;
-      display: flex; 
+      display: flex;
       justify-content: flex-start;
       align-items: center;
     }
@@ -40,9 +53,9 @@ nav p {
       width: 6.99538rem;
       height: 6.99538rem;
       flex-shrink: 0;
-      margin: 15px;
+      /* margin: 15px; */
     }
-  
+
     nav p {
       width: 6.9375rem;
       height: 4.25rem;

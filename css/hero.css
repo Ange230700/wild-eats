@@ -56,7 +56,20 @@ button#searchButton {
   width: 80%;
   justify-content: center;
   gap: 20px;
-  padding: 0 4.5rem;
+  padding: 0 1.6rem;
+}
+
+.hero .search-bar #searchInput {
+  padding-left: 1rem;
+}
+
+.hero .search-bar #searchInput::placeholder {
+  font-family: var(--header-font);
+}
+
+.hero h1 {
+  font-size: 1.8rem;
+  padding: 0 12%;
 }
 
 @media screen and (max-width: 600px) {
@@ -68,6 +81,7 @@ button#searchButton {
 
   .hero h1 {
     font-size: 1.8rem;
+    padding: 0 12%;
   }
 
   #searchButton img {
@@ -86,6 +100,14 @@ button#searchButton {
     flex-direction: column;
     /* top: 25%;
     left: 13%; */
+  }
+
+  .hero .search-bar #searchInput {
+    padding-left: 1rem;
+  }
+
+  .hero .search-bar #searchInput::placeholder {
+    font-family: var(--header-font);
   }
 
   .buttonName {
