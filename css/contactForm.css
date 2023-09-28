@@ -1,4 +1,4 @@
-/* voir pour resizer avec le reste*/
+
 @import url("./navbar.css");
 
 :root {
@@ -34,6 +34,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
 max-height: 100vh;
 
@@ -103,7 +104,7 @@ section > form {
       padding: 10px;
       margin-top: var(--spacing);
       font-family: var(--text-font);
-      animation: 4s ease-in-out disappear forwards;
+      animation: 3s ease-in-out disappear forwards;
 
     }
     
