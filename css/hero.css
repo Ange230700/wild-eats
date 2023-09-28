@@ -87,4 +87,8 @@ button#searchButton {
     /* top: 25%;
     left: 13%; */
   }
+
+  .buttonName {
+    display: block;
+  }
 }

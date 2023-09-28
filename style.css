@@ -1,5 +1,9 @@
+@import url("./css/filter.css");
+@import url("./css/filterDesktop.css");
 @import url("./css/map.css");
 @import url("./css/navbar.css");
+@import url("./css/footer.css");
+@import url("./css/hero.css");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
 @import url("./css/hero.css");
 
@@ -13,21 +17,21 @@
   /* neutral colors */
   --white: #fff;
   --black: #000;
-  --hover-color: #e4e4e4;
+  --active-color: #e4e4e4;
 
   /* font-family */
   --text-font: "Mulish", sans-serif;
   --header-font: "Poppins", sans-serif;
 
   /* font-size */
-  --font-size-standard: 20px;
+  --font-size-standard: 1.25rem; /* 20px */
   --font-size-title: calc(var(--font-size-standard) * 2);
 
   /* line height */
   --line-height-standard: 1.5;
 
   /* spacing */
-  --spacing: 8px;
+  --spacing: 0.5rem; /* 8px */
   --spacing-x2: calc(var(--spacing) * 2);
 }
 
@@ -39,32 +43,49 @@
 
 body {
   font-family: var(--text-font);
-  font-size: var(--font-size-standard);
   line-height: var(--line-height-standard);
+  font-size: var(--font-size-standard);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+nav {
+  height: 3.75rem;
+}
+
+.hero {
+  height: auto;
+}
+
+main {
+  flex: 1;
+}
+
 @media screen and (600px < width) {
   body {
+    font-family: var(--text-font);
+    font-size: var(--font-size-standard);
+    line-height: var(--line-height-standard);
+    min-height: 100vh;
+    max-width: 100vw;
     display: grid;
-    grid-template-areas: 
-      "nav nav nav"
-      "hero hero hero"
-      "aside main main"
-      "footer footer footer";
-    grid-template-rows: 7.875rem calc(100vh - 9rem) 1fr 5.125rem;
+    grid-template-areas:
+      "nav nav nav nav"
+      "hero hero hero hero"
+      "aside main main main"
+      "footer footer footer footer";
+    grid-template-rows: auto auto 1fr auto;
   }
 
   nav {
     grid-area: nav;
-    height: 7.875rem;
+    height: auto;
   }
 
   .hero {
     grid-area: hero;
-    height: calc(100vh - 9rem);
+    height: auto;
   }
 
   main {
@@ -73,6 +94,6 @@ body {
 
   footer {
     grid-area: footer;
-    height: 5.125rem;
+    height: auto;
   }
 }

@@ -29,17 +29,216 @@
       </div>
     </section>
 
-    <aside class="typesDesktop"></aside>
+    <aside class="typesDesktop">
+      <div class="type">
+        <p>Types de restaurant</p>
+
+        <div class="italian">
+          <input
+            type="checkbox"
+            name="typeResto"
+            value="Italien"
+            id="italian"
+          />
+          <label for="italian">Italien</label>
+        </div>
+
+        <div class="asian">
+          <input
+            type="checkbox"
+            name="typeResto"
+            value="Asiatique"
+            id="asian"
+          />
+          <label for="asian">Asiatique</label>
+        </div>
+
+        <div class="veggie">
+          <input
+            type="checkbox"
+            name="typeResto"
+            value="Végétarien"
+            id="veggie"
+          />
+          <label for="veggie">Végétarien</label>
+        </div>
+
+        <div class="bistro">
+          <input type="checkbox" name="typeResto" value="Bistro" id="bistro" />
+          <label for="bistro">Bistro</label>
+        </div>
+      </div>
+
+      <div class="type">
+        <p>Prix</p>
+
+        <div class="affordable">
+          <input
+            type="checkbox"
+            name="prix"
+            value="abordable"
+            id="affordable"
+          />
+          <label for="affordable">€</label>
+        </div>
+
+        <div class="less-affordable">
+          <input
+            type="checkbox"
+            name="prix"
+            value="moins-abordable"
+            id="less-affordable"
+          />
+          <label for="less-affordable">€€</label>
+        </div>
+
+        <div class="expensive">
+          <input type="checkbox" name="prix" value="cher" id="expensive" />
+          <label for="expensive">€€€</label>
+        </div>
+      </div>
+
+      <div class="type">
+        <p>Notes</p>
+
+        <div class="oneStar">
+          <input type="checkbox" name="note" value="uneEtoile" id="oneStar" />
+          <label for="oneStar">⭐</label>
+        </div>
+
+        <div class="twoStars">
+          <input
+            type="checkbox"
+            name="note"
+            value="deuxEtoiles"
+            id="twoStars"
+          />
+          <label for="twoStars">⭐⭐</label>
+        </div>
+
+        <div class="threeStars">
+          <input
+            type="checkbox"
+            name="note"
+            value="troisEtoiles"
+            id="threeStars"
+          />
+          <label for="threeStars">⭐⭐⭐</label>
+        </div>
+      </div>
+    </aside>
 
     <main>
       <section class="cards"></section>
-      <section class="typesMobile"></section>
-      <section class="map"></section>
+
+      <section class="typesMobile">
+        <div class="dropdown">
+          <button class="filterButton">Types</button>
+
+          <ul class="dropdown-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="11"
+              viewBox="0 0 18 11"
+              fill="none"
+            >
+              <path d="M9 0L17.6603 10.5H0.339746L9 0Z" fill="#92817A"></path>
+            </svg>
+
+            <li><button>Italien</button></li>
+            <li><button>Asiatique</button></li>
+            <li><button>Végétarien</button></li>
+            <li><button>Bistro</button></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="filterButton">Prix</button>
+
+          <ul class="dropdown-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="11"
+              viewBox="0 0 18 11"
+              fill="none"
+            >
+              <path d="M9 0L17.6603 10.5H0.339746L9 0Z" fill="#92817A"></path>
+            </svg>
+
+            <li><button>€</button></li>
+            <li><button>€€</button></li>
+            <li><button>€€€</button></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="filterButton">Notes</button>
+
+          <ul class="dropdown-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="11"
+              viewBox="0 0 18 11"
+              fill="none"
+            >
+              <path d="M9 0L17.6603 10.5H0.339746L9 0Z" fill="#92817A"></path>
+            </svg>
+
+            <li><button>⭐</button></li>
+            <li><button>⭐⭐</button></li>
+            <li><button>⭐⭐⭐</button></li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="links">
+        <div class="lien instagram">
+          <a
+            href="https://instagram.com/wildcodeschoolofficial?igshid=MzRlODBiNWFlZA=="
+            target="_blank"
+            ><img src="images/InstagramLogo.svg.png" alt=""
+          /></a>
+        </div>
+
+        <div class="lien facebook" href="">
+          <a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
+            ><img src="images/facebookLogo.svg.png" alt=""
+          /></a>
+        </div>
+
+        <div class="lien wildcodeschool">
+          <a
+            href="https://www.wildcodeschool.com/fr-FR/campus/a-distance?utm_source=google&utm_medium=cpc&utm_campaign=brand&utm_term=wild%20code%20school%20formation&utm_campaign=FR+-+campagne+marque&utm_source=adwords&utm_medium=ppc&hsa_acc=4421706736&hsa_cam=14821000047&hsa_grp=136646397004&hsa_ad=629161360522&hsa_src=g&hsa_tgt=aud-762721332217:kwd-1843089244925&hsa_kw=wild%20code%20school%20formation&hsa_mt=p&hsa_ver=3&hsa_net=adwords&gclid=Cj0KCQjw9rSoBhCiARIsAFOiplnZlCQJ9pYcOtDogbe65lclFpy9O6h0jAsmLHvzWtZzYNPlzSBJI98aAhVOEALw_wcB"
+            target="_blank"
+            ><img src="images/wildCodeSchoolLogoEntire.png" alt="logo"
+          /></a>
+        </div>
+
+        <div class="lien nouscontacter">
+          <a href="#####" target="_blank"
+            ><img src="images/mailLogo.png" alt="contacter"
+          /></a>
+        </div>
+      </div>
+
+      <div class="adresse_copyright">
+        <div id="adress">
+          <p>4 rue Baron</p>
+          <p>44000 Nantes</p>
+        </div>
+
+        <div id="copyright">
+          <p>&copy wilders 2023</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="./script.js"></script>
     <script src="./js/map.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
