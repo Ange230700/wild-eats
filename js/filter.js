@@ -1,4 +1,4 @@
-const filterButtonArray = document.querySelectorAll(`.filterButton`);
+/*const filterButtonArray = document.querySelectorAll(`.filterButton`);
 
 filterButtonArray.forEach(
     (filterButton) => {
@@ -8,5 +8,5 @@ filterButtonArray.forEach(
     }
 );
 
-
+*/
 // ! Filter logic for the filter buttons

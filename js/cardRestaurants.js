@@ -7,7 +7,7 @@ const cardRestaurants =[
     address : "31 Rue Fouré, 44000 Nantes",
     takeaway : true,
     price : 1,
-    star : 3
+    note : 3
     },
     {
     restaurantName : "PAZZI",
@@ -17,8 +17,8 @@ const cardRestaurants =[
     address : "21 Rue Fouré, 44000 Nantes",
     takeaway : true,
     price : 1,
-    star : 3
-    },
+    note : 3
+    } ,
     {
     restaurantName : "Guindaille",
     image : "images/restaurants/guindaille.png",
@@ -27,7 +27,7 @@ const cardRestaurants =[
     address : "36 Rue Fouré, 44000 Nantes",
     takeaway : false,
     price : 2,
-    star : 3
+    note : 3
     },
     {
     restaurantName : "Le Lion et L'agneau",
@@ -37,7 +37,7 @@ const cardRestaurants =[
     address : "40 Rue Fouré, 44000 Nantes",
     takeaway : false,
     price : 2,
-    star : 3   
+    note : 3   
     },
     {
     restaurantName : "La Récré",
@@ -47,7 +47,7 @@ const cardRestaurants =[
     address : "5 rue Baron, 44000 Nantes",
     takeaway : false,
     price : 2,
-    star : 2   
+    note : 2   
     },
     {
     restaurantName : "Bairoz",
@@ -57,17 +57,17 @@ const cardRestaurants =[
     address : "40 Bis Rue Fouré, 44000 Nantes",
     takeaway : false,
     price : 3,
-    star : 3   
+    note : 3   
     },
     {
     restaurantName : "Papà Pasta",
     image : "images/restaurants/papapasta.png",
     link: "https://www.instagram.com/papapasta44/",
-    category : "Italian",
+    category : "Italien",
     address : "27 Rue Fouré, 44000 Nantes",
     takeaway : true,
     price : 1,
-    star : 3   
+    note : 3   
     },
     {
     restaurantName : "La Căn tin Việt",
@@ -77,7 +77,7 @@ const cardRestaurants =[
     address : "21 Rue Fouré, 44000 Nantes",
     takeaway : true,
     price : 1,
-    star : 2   
+    note : 2   
     },
     {
     restaurantName : "Papill'",
@@ -87,7 +87,7 @@ const cardRestaurants =[
     address : "8 Rue de Saverne, 44000 Nantes",
     takeaway : true,
     price : 1,
-    star : 3   
+    note : 3   
     },
     {
     restaurantName : "ICHIZEN",
@@ -97,7 +97,7 @@ const cardRestaurants =[
     address : "11 Rue Fouré, 44000 Nantes",
     takeaway : true,
     price : 1,
-    star : 3   
+    note : 3   
     }
 
 ]
