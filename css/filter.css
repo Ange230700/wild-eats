@@ -11,18 +11,12 @@
 }
 
 .typesMobile button {
-  /* BUTTON NAME */
   color: var(--tertiary-color);
   text-align: center;
-  font-family: "Mulish", sans-serif;
-  font-size: 1rem; /* 16px */
-
-  /* BUTTON STYLE */
+  font-size: calc(var(--font-size-standard) * 0.8); /* 16px */
   background: var(--secondary-color);
   border: none;
   border-radius: 0.9375rem; /* 15px */
-
-  /* BUTTON LAYOUT */
   width: 4.6875rem; /* 75px */
   height: 1.5625rem; /* 25px */
 }
@@ -38,7 +32,7 @@
 }
 
 .dropdown-content svg {
-  margin: 0 auto;
+  margin: 0 auto -2px auto;
   width: 50%;
   display: block;
 }
@@ -53,13 +47,16 @@
   display: none;
 }
 
-.dropdown:hover .dropdown-content {
+.menu {
   display: block;
+}
+
+.dropdown-content li {
+  margin-bottom: -2px;
 }
 
 .dropdown-content li button {
   color: var(--white);
-  font-size: 0.75rem; /* 12px */
+  font-size: calc(var(--font-size-standard) * 0.6); /* 12px */
   border-radius: 0;
-  line-height: 0;
 }
