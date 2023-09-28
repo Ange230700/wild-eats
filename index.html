@@ -139,44 +139,21 @@
       <main>
         <section class="typesMobile">
           <div class="dropdown">
-            <button class="filterButton">Types</button>
-
-            <ul class="dropdown-content">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="11"
-                viewBox="0 0 18 11"
-                fill="none"
-              >
-                <path d="M9 0L17.6603 10.5H0.339746L9 0Z" fill="#92817A"></path>
-              </svg>
-
-              <li><button>Italien</button></li>
-              <li><button>Asiatique</button></li>
-              <li><button>Végétarien</button></li>
-              <li><button>Bistro</button></li>
-            </ul>
+            <select class="filterButton" name="type">
+              <option value="All">Types</option>
+              <option value="Italien">Italien</option>
+              <option value="Asiatique">Asiatique</option>
+              <option value="Végétarien">Végétarien</option>
+              <option value="Bistro">Bistro</option>
+            </select>
           </div>
-
           <div class="dropdown">
-            <button class="filterButton">Prix</button>
-
-            <ul class="dropdown-content">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="11"
-                viewBox="0 0 18 11"
-                fill="none"
-              >
-                <path d="M9 0L17.6603 10.5H0.339746L9 0Z" fill="#92817A"></path>
-              </svg>
-
-              <li><button>€</button></li>
-              <li><button>€€</button></li>
-              <li><button>€€€</button></li>
-            </ul>
+            <select class="filterPrice" name="price">
+              <option value="All">Prix</option>
+              <option value="1">€</option>
+              <option value="2">€€</option>
+              <option value="3">€€€</option>
+            </select>
           </div>
           <div class="dropdown">
             <button class="filterButton">Notes</button>

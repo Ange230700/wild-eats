@@ -7,3 +7,6 @@ filterButtonArray.forEach(
         });
     }
 );
+
+
+// ! Filter logic for the filter buttons
