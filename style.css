@@ -5,6 +5,7 @@
 @import url("./css/footer.css");
 @import url("./css/hero.css");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
+@import url("./css/cards.css");
 
 
 :root {
@@ -40,6 +41,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   font-family: var(--text-font);
