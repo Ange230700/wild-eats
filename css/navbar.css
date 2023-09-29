@@ -15,6 +15,12 @@ nav p {
   font-size: 1.25rem;
 }
 
+.logoWE {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 @media screen and (min-width: 600px) {
   nav {
     justify-content: flex-start;
@@ -29,17 +35,19 @@ nav p {
   nav p {
     font-size: calc(var(--font-size-standard) * 3);
   }
-  
+
   @media screen and (min-width: 600px) {
     nav {
+      flex-shrink: 0;
+      display: flex;
+
       justify-content: flex-start;
     }
     nav img {
       width: 6.99538rem;
       height: 6.99538rem;
-      margin-left: calc(var(--spacing) * 2.5);
     }
-  
+
     nav p {
       font-size: calc(var(--font-size-standard) * 3);
     }
