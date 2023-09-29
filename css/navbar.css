@@ -1,9 +1,8 @@
 nav {
-  background-color: var(--primary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav img {
@@ -27,12 +26,6 @@ nav p {
     justify-content: flex-start;
   }
 
-  .logoWE {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
   nav img {
     width: 6.99538rem;
     height: 6.99538rem;
@@ -47,6 +40,7 @@ nav p {
     nav {
       flex-shrink: 0;
       display: flex;
+
       justify-content: flex-start;
       align-items: center;
       height: 10vh;
@@ -54,18 +48,10 @@ nav p {
     nav img {
       width: 6.99538rem;
       height: 6.99538rem;
-      flex-shrink: 0;
-      /* margin: 15px; */
     }
 
     nav p {
-      width: 6.9375rem;
-      height: 4.25rem;
-      flex-shrink: 0;
-      font-size: 3rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+      font-size: calc(var(--font-size-standard) * 3);
     }
   }
 }
