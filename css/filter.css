@@ -26,6 +26,14 @@
   color: var(--secondary-color);
 }
 
+.filterButton, .filterPrice, .filterNotes {
+  background-color: var(--secondary-color);
+  color : var(--tertiary-color);
+  font-family: var(--text-font);
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
