@@ -9,10 +9,12 @@ const message = document.querySelector(".message")
 const input = document.querySelector("#submit")
 
 
-form.onsubmit = function (event) {
-    event.preventDefault()
-    const messageSend = document.createElement("h4")
-    messageSend.innerHTML = "✅ Email envoyé! Nous vous recontacterons bientôt"
-    message.append(messageSend)
-    
-}
+form.addEventListener("submit", (event) =>  {
+        event.preventDefault()
+        message.innerHTML = ""
+        form.reset()
+        const messageSend = document.createElement("h4")
+        messageSend.innerHTML = "✅ Email envoyé! Nous vous recontacterons bientôt"
+        message.append(messageSend)
+        
+} )

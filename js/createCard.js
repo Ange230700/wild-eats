@@ -1,9 +1,9 @@
-function createCard(restaurantName, image, link, category, address, takeaway, price, star){
+function createCard(restaurantName, image, link, category, address, takeaway, price, note){
 
   //change number of starts to HTML
   let starHtml = "";
 
-  for(let i = 1; i <= star; i++){
+  for(let i = 1; i <= note; i++){
     let text = `<i class="fa-solid fa-star"></i>`
     starHtml += text;
   }
