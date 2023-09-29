@@ -8,6 +8,7 @@ const inputText = document.querySelector(`#searchInput`);
 const typeOfFood = document.querySelector(`.filterButton`);
 const pricing = document.querySelector(`.filterPrice`);
 const notes = document.querySelector(`.filterNotes`);
+const inputCheckbox = document.querySelector(".input-checkbox");
 
 const generateRestaurant = () => {
 
@@ -43,10 +44,15 @@ const generateRestaurant = () => {
 }
 
 
+// Fonction filter version Desktop
+
+
 inputText.addEventListener(`input`, generateRestaurant);
 
 typeOfFood.addEventListener(`input`, generateRestaurant);
 pricing.addEventListener(`input`, generateRestaurant);
 notes.addEventListener(`input`, generateRestaurant);
+
+inputCheckbox.addEventListener("input", generateRestaurant);
 
 generateRestaurant();
