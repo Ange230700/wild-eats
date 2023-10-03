@@ -20,54 +20,65 @@
       <section>
         <form id="contactForm">
           <label for="name" >Prénom Nom</label><br>
-            <input type="text" id="name"><br>
+            <input type="text" id="name" required><br>
           <label for="email" >Email</label><br>
-            <input type="email" id="email"><br>
+            <input type="email" id="email" required><br>
           <label for="message">Message</label><br>
-              <textarea name="message" id="textarea" cols="40" rows="10"></textarea>
+              <textarea name="message" id="textarea" cols="40" rows="10" required></textarea>
             <input type="submit" id="submit" value="Envoyer">
               <script src="/js/contactForm.js"></script>
         </form>
       </section>
-  <footer>
-    <div class="links">
-      <div class="lien instagram">
-        <a
-          href="https://instagram.com/wildcodeschoolofficial?igshid=MzRlODBiNWFlZA=="
-          target="_blank"
-          ><img src="images/instagram.svg" alt="logo-instagram"
-        /></a>
-      </div>
+      <footer>
+        <div class="links">
+          <div class="lien instagram">
+            <a
+              href="https://instagram.com/wildcodeschoolofficial?igshid=MzRlODBiNWFlZA=="
+              target="_blank">
+              <i class="fa-brands fa-instagram fa-2xl" style="color: #464646"></i></a>
+          </div>
 
-      <div class="lien facebook" href="">
-        <a href="https://www.facebook.com/WildCodeSchool/" target="_blank"
-          ><img src="images/square-facebook.svg" alt="logo-facebook"
-        /></a>
-      </div>
+          <div class="lien facebook" href="">
+            <a href="https://www.facebook.com/WildCodeSchool/" target="_blank">
+              <i class="fa-brands fa-square-facebook fa-2xl" style="color: #464646"></i>
+            </a>
+          </div>
 
-      <div class="lien wildcodeschool">
-        <a
-          href="https://www.wildcodeschool.com/fr-FR/campus/a-distance?utm_source=google&utm_medium=cpc&utm_campaign=brand&utm_term=wild%20code%20school%20formation&utm_campaign=FR+-+campagne+marque&utm_source=adwords&utm_medium=ppc&hsa_acc=4421706736&hsa_cam=14821000047&hsa_grp=136646397004&hsa_ad=629161360522&hsa_src=g&hsa_tgt=aud-762721332217:kwd-1843089244925&hsa_kw=wild%20code%20school%20formation&hsa_mt=p&hsa_ver=3&hsa_net=adwords&gclid=Cj0KCQjw9rSoBhCiARIsAFOiplnZlCQJ9pYcOtDogbe65lclFpy9O6h0jAsmLHvzWtZzYNPlzSBJI98aAhVOEALw_wcB"
-          target="_blank"
-          ><img src="images/wildCodeSchoolLogoEntire.png" alt="logo"
-        /></a>
-      </div>
+          <div class="lien wildcodeschool">
+            <a
+              href="https://www.wildcodeschool.com/fr-FR/campus/a-distance?utm_source=google&utm_medium=cpc&utm_campaign=brand&utm_term=wild%20code%20school%20formation&utm_campaign=FR+-+campagne+marque&utm_source=adwords&utm_medium=ppc&hsa_acc=4421706736&hsa_cam=14821000047&hsa_grp=136646397004&hsa_ad=629161360522&hsa_src=g&hsa_tgt=aud-762721332217:kwd-1843089244925&hsa_kw=wild%20code%20school%20formation&hsa_mt=p&hsa_ver=3&hsa_net=adwords&gclid=Cj0KCQjw9rSoBhCiARIsAFOiplnZlCQJ9pYcOtDogbe65lclFpy9O6h0jAsmLHvzWtZzYNPlzSBJI98aAhVOEALw_wcB"
+              target="_blank"
+              ><img src="images/wildCodeSchoolLogoEntire.png" alt="logo" width="70em"
+            /></a>
+          </div>
 
-      <div class="lien nouscontacter">
-          <img src="images/mailLogo.png" alt="contacter"/>
-      </div>
-    </div>
+          <div class="lien nouscontacter">
+            <!--<a href="./contactForm.html">
+              <i class="fa-solid fa-envelope fa-2xl" style="color: #464646" width="500px"
+              ></i>
+            </a>-->
+          </div>
+        </div>
 
-    <div class="adresse_copyright">
-      <div id="adress">
-        <p>4 rue Baron</p>
-        <p>44000 Nantes</p>
-      </div>
+        <div class="adresse_copyright">
+          <div id="adress">
+            <p>4 rue Baron</p>
+            <p>44000 Nantes</p>
+          </div>
 
-      <div id="copyright">
-        <p>&copy wilders 2023</p>
-      </div>
-    </div>
-  </footer>
-</body>
+          <div id="copyright">
+            <p>&copy wilders 2023</p>
+          </div>
+        </div>
+      </footer>
+
+      <script type="module" src="./script.js"></script>
+      <script src="./js/map.js"></script>
+      <script src="./js/filter.js"></script>
+      <script
+        src="https://kit.fontawesome.com/5e17021a5c.js"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
 </html>
