@@ -65,13 +65,13 @@
   width: 60%;
 }
 .restaurant-title {
-  font-size: 1.2rem;
-  white-space: nowrap;
+font-size: 1.1rem;
+
+
+white-space: nowrap;
 overflow: hidden;
 text-overflow:  ellipsis;
 }
-/*star icon for review*/
-
 .fa-star {
   color: #e6c723;
   font-size: 0.9rem;
