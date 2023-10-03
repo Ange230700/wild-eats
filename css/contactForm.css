@@ -146,6 +146,14 @@ section > form {
       margin: var(--spacing);
       padding: 10px;
     }
+
+    input:valid {
+      border: 1px solid green;
+    }
+    
+    input:invalid {
+      border: 1px dashed red;
+    }
     
     textarea {
       resize: none;
