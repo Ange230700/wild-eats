@@ -31,7 +31,9 @@
 }
 
 .card:hover {
-  transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(
+    1.01
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   box-shadow: 2px 2px 15px #a8a297;
 }
 
@@ -61,23 +63,20 @@
   padding: calc(var(--spacing) * 1.2) calc(var(--spacing) * 1.2);
 }
 
-.restaurantname-div{
+.restaurantname-div {
   width: 60%;
 }
 .restaurant-title {
-font-size: 1.1rem;
+  font-size: 1.1rem;
 
-
-white-space: nowrap;
-overflow: hidden;
-text-overflow:  ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .fa-star {
   color: #e6c723;
   font-size: 0.9rem;
 }
-
-
 
 .card-takeaway {
   font-size: 0.8rem;
@@ -85,9 +84,7 @@ text-overflow:  ellipsis;
 
 .card-adress {
   font-size: 0.8rem;
-  
 }
-
 
 .fa-link {
   color: var(--secondary-color);
@@ -116,4 +113,3 @@ text-overflow:  ellipsis;
   justify-content: space-between;
   align-items: center;
 }
-
