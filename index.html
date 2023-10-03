@@ -1,226 +1,225 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <html>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
-      <title>Wild Eats</title>
-    </head>
-    <body>
-      <nav>
-        <div class="logoWE">
-          <img src="./images/wLogo.png" alt="logo" />
-          <p>Eats</p>
-        </div>
-      </nav>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="style.css">
+    <title>Wild Eats</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logoWE">
+        <img src="./images/wLogo.png" alt="logo" />
+        <p>Eats</p>
+      </div>
+    </nav>
 
-      <section class="hero">
-        <div class="heroImage">
-          <h1>Retrouvez les meilleurs restos près du campus !</h1>
-          <div class="search-bar">
-            <input
-              type="text"
-              id="searchInput"
-              placeholder="Que désirez-vous ?"
-            />
-            <button id="searchButton">
-              <img src="./images/searchButtonIcon.png" alt="Search Icon" />
-              <p class="buttonName">Lancer la recherche</p>
-            </button>
-          </div>
+    <section class="hero">
+      <div class="heroImage">
+        <h1>Retrouvez les meilleurs restos près du campus !</h1>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Que désirez-vous ?"
+          />
+          <button id="searchButton">
+            <img src="./images/searchButtonIcon.png" alt="Search Icon" />
+            <p class="buttonName">Lancer la recherche</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="typesDesktop">
+      <div class="type">
+        <p>Types de restaurant</p>
+
+        <div class="italian">
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="typeResto"
+            value="Italien"
+            id="italian"
+          />
+          <label for="italian">Italien</label>
+        </div>
+
+        <div class="asian">
+          <input
+            type="checkbox"
+            name="typeResto"
+            value="Asiatique"
+            id="asian"
+          />
+          <label for="asian">Asiatique</label>
+        </div>
+
+        <div class="veggie">
+          <input
+            type="checkbox"
+            name="typeResto"
+            value="Végétarien"
+            id="veggie"
+          />
+          <label for="veggie">Végétarien</label>
+        </div>
+
+        <div class="bistro">
+          <input
+            type="checkbox"
+            name="typeResto"
+            value="Bistro"
+            id="bistro"
+          />
+          <label for="bistro">Bistro</label>
+        </div>
+      </div>
+
+      <div class="type">
+        <p>Prix</p>
+
+        <div class="affordable">
+          <input
+            type="checkbox"
+            name="prix"
+            value="abordable"
+            id="affordable"
+          />
+          <label for="affordable">€</label>
+        </div>
+
+        <div class="less-affordable">
+          <input
+            type="checkbox"
+            name="prix"
+            value="moins-abordable"
+            id="less-affordable"
+          />
+          <label for="less-affordable">€€</label>
+        </div>
+
+        <div class="expensive">
+          <input type="checkbox" name="prix" value="cher" id="expensive" />
+          <label for="expensive">€€€</label>
+        </div>
+      </div>
+
+      <div class="type">
+        <p>Notes</p>
+
+        <div class="oneStar">
+          <input type="checkbox" name="note" value="uneEtoile" id="oneStar" />
+          <label for="oneStar">⭐</label>
+        </div>
+
+        <div class="twoStars">
+          <input
+            type="checkbox"
+            name="note"
+            value="deuxEtoiles"
+            id="twoStars"
+          />
+          <label for="twoStars">⭐⭐</label>
+        </div>
+
+        <div class="threeStars">
+          <input
+            type="checkbox"
+            name="note"
+            value="troisEtoiles"
+            id="threeStars"
+          />
+          <label for="threeStars">⭐⭐⭐</label>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="typesMobile">
+        <div class="dropdown">
+          <select class="filterButton" name="type">
+            <option value="All">Types</option>
+            <option value="Italien">Italien</option>
+            <option value="Asiatique">Asiatique</option>
+            <option value="Végétarien">Végétarien</option>
+            <option value="Bistro">Bistro</option>
+          </select>
+        </div>
+        <div class="dropdown">
+          <select class="filterPrice" name="price">
+            <option value="0">Prix</option>
+            <option value="1">€</option>
+            <option value="2">€€</option>
+            <option value="3">€€€</option>
+          </select>
+        </div>
+        <div class="dropdown">
+          <select class="filterNotes" name="note">
+            <option value="0">Notes</option>
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+          </select>
         </div>
       </section>
+      <section class="cards">
+        <!--createCard with JS files-->
+      </section>
+    </main>
 
-      <aside class="typesDesktop">
-        <div class="type">
-          <p>Types de restaurant</p>
-
-          <div class="italian">
-            <input
-              type="checkbox"
-              class="input-checkbox"
-              name="typeResto"
-              value="Italien"
-              id="italian"
-            />
-            <label for="italian">Italien</label>
-          </div>
-
-          <div class="asian">
-            <input
-              type="checkbox"
-              name="typeResto"
-              value="Asiatique"
-              id="asian"
-            />
-            <label for="asian">Asiatique</label>
-          </div>
-
-          <div class="veggie">
-            <input
-              type="checkbox"
-              name="typeResto"
-              value="Végétarien"
-              id="veggie"
-            />
-            <label for="veggie">Végétarien</label>
-          </div>
-
-          <div class="bistro">
-            <input
-              type="checkbox"
-              name="typeResto"
-              value="Bistro"
-              id="bistro"
-            />
-            <label for="bistro">Bistro</label>
-          </div>
+    <footer>
+      <div class="links">
+        <div class="lien instagram">
+          <a
+            href="https://instagram.com/wildcodeschoolofficial?igshid=MzRlODBiNWFlZA=="
+            target="_blank">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #464646"></i></a>
         </div>
 
-        <div class="type">
-          <p>Prix</p>
-
-          <div class="affordable">
-            <input
-              type="checkbox"
-              name="prix"
-              value="abordable"
-              id="affordable"
-            />
-            <label for="affordable">€</label>
-          </div>
-
-          <div class="less-affordable">
-            <input
-              type="checkbox"
-              name="prix"
-              value="moins-abordable"
-              id="less-affordable"
-            />
-            <label for="less-affordable">€€</label>
-          </div>
-
-          <div class="expensive">
-            <input type="checkbox" name="prix" value="cher" id="expensive" />
-            <label for="expensive">€€€</label>
-          </div>
+        <div class="lien facebook" href="">
+          <a href="https://www.facebook.com/WildCodeSchool/" target="_blank">
+            <i class="fa-brands fa-square-facebook fa-2xl" style="color: #464646"></i>
+          </a>
         </div>
 
-        <div class="type">
-          <p>Notes</p>
-
-          <div class="oneStar">
-            <input type="checkbox" name="note" value="uneEtoile" id="oneStar" />
-            <label for="oneStar">⭐</label>
-          </div>
-
-          <div class="twoStars">
-            <input
-              type="checkbox"
-              name="note"
-              value="deuxEtoiles"
-              id="twoStars"
-            />
-            <label for="twoStars">⭐⭐</label>
-          </div>
-
-          <div class="threeStars">
-            <input
-              type="checkbox"
-              name="note"
-              value="troisEtoiles"
-              id="threeStars"
-            />
-            <label for="threeStars">⭐⭐⭐</label>
-          </div>
-        </div>
-      </aside>
-
-      <main>
-        <section class="typesMobile">
-          <div class="dropdown">
-            <select class="filterButton" name="type">
-              <option value="All">Types</option>
-              <option value="Italien">Italien</option>
-              <option value="Asiatique">Asiatique</option>
-              <option value="Végétarien">Végétarien</option>
-              <option value="Bistro">Bistro</option>
-            </select>
-          </div>
-          <div class="dropdown">
-            <select class="filterPrice" name="price">
-              <option value="0">Prix</option>
-              <option value="1">€</option>
-              <option value="2">€€</option>
-              <option value="3">€€€</option>
-            </select>
-          </div>
-          <div class="dropdown">
-            <select class="filterNotes" name="note">
-              <option value="0">Notes</option>
-              <option value="1">⭐</option>
-              <option value="2">⭐⭐</option>
-              <option value="3">⭐⭐⭐</option>
-            </select>
-          </div>
-        </section>
-        <section class="cards">
-          <!--createCard with JS files-->
-        </section>
-      </main>
-
-      <footer>
-        <div class="links">
-          <div class="lien instagram">
-            <a
-              href="https://instagram.com/wildcodeschoolofficial?igshid=MzRlODBiNWFlZA=="
-              target="_blank">
-              <i class="fa-brands fa-instagram fa-2xl" style="color: #464646"></i></a>
-          </div>
-
-          <div class="lien facebook" href="">
-            <a href="https://www.facebook.com/WildCodeSchool/" target="_blank">
-              <i class="fa-brands fa-square-facebook fa-2xl" style="color: #464646"></i>
-            </a>
-          </div>
-
-          <div class="lien wildcodeschool">
-            <a
-              href="https://www.wildcodeschool.com/fr-FR/campus/a-distance?utm_source=google&utm_medium=cpc&utm_campaign=brand&utm_term=wild%20code%20school%20formation&utm_campaign=FR+-+campagne+marque&utm_source=adwords&utm_medium=ppc&hsa_acc=4421706736&hsa_cam=14821000047&hsa_grp=136646397004&hsa_ad=629161360522&hsa_src=g&hsa_tgt=aud-762721332217:kwd-1843089244925&hsa_kw=wild%20code%20school%20formation&hsa_mt=p&hsa_ver=3&hsa_net=adwords&gclid=Cj0KCQjw9rSoBhCiARIsAFOiplnZlCQJ9pYcOtDogbe65lclFpy9O6h0jAsmLHvzWtZzYNPlzSBJI98aAhVOEALw_wcB"
-              target="_blank"
-              ><img src="images/wildCodeSchoolLogoEntire.png" alt="logo" width="70em"
-            /></a>
-          </div>
-
-          <div class="lien nouscontacter">
-            <a href="./contactForm.html">
-              <i class="fa-solid fa-envelope fa-2xl" style="color: #464646" 
-              ></i>
-              <p>Nous contacter</p>
-            </a>
-          </div>
+        <div class="lien wildcodeschool">
+          <a
+            href="https://www.wildcodeschool.com/fr-FR/campus/a-distance?utm_source=google&utm_medium=cpc&utm_campaign=brand&utm_term=wild%20code%20school%20formation&utm_campaign=FR+-+campagne+marque&utm_source=adwords&utm_medium=ppc&hsa_acc=4421706736&hsa_cam=14821000047&hsa_grp=136646397004&hsa_ad=629161360522&hsa_src=g&hsa_tgt=aud-762721332217:kwd-1843089244925&hsa_kw=wild%20code%20school%20formation&hsa_mt=p&hsa_ver=3&hsa_net=adwords&gclid=Cj0KCQjw9rSoBhCiARIsAFOiplnZlCQJ9pYcOtDogbe65lclFpy9O6h0jAsmLHvzWtZzYNPlzSBJI98aAhVOEALw_wcB"
+            target="_blank"
+            ><img src="images/wildCodeSchoolLogoEntire.png" alt="logo" width="70em"
+          /></a>
         </div>
 
-        <div class="adresse_copyright">
-          <div id="adress">
-            <p>4 rue Baron</p>
-            <p>44000 Nantes</p>
-          </div>
-
-          <div id="copyright">
-            <p>&copy wilders 2023</p>
-          </div>
+        <div class="lien nouscontacter">
+          <a href="./contactForm.html">
+            <i class="fa-solid fa-envelope fa-2xl" style="color: #464646" 
+            ></i>
+            <p>Nous contacter</p>
+          </a>
         </div>
-      </footer>
+      </div>
 
-      <script type="module" src="./script.js"></script>
-      <script src="./js/map.js"></script>
-      <script src="./js/filter.js"></script>
-      <script
-        src="https://kit.fontawesome.com/5e17021a5c.js"
-        crossorigin="anonymous"
-      ></script>
-    </body>
-  </html>
+      <div class="adresse_copyright">
+        <div id="adress">
+          <p>4 rue Baron</p>
+          <p>44000 Nantes</p>
+        </div>
+
+        <div id="copyright">
+          <p>&copy wilders 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/filter.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5e17021a5c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  
 </html>
