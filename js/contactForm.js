@@ -10,7 +10,8 @@ form.addEventListener("submit", (event) =>  {
         event.preventDefault()
         message.innerHTML = ""
         form.reset()
-        const messageSend = document.createElement("h4")
+        message.style.display = "flex"
+        const messageSend = document.createElement("h5")
         messageSend.innerHTML = "✅ Message envoyé! Nous vous recontacterons bientôt"
         message.append(messageSend)
 } )
