@@ -37,7 +37,6 @@
 body {
   line-height: var(--line-height-standard);
   font-size: var(--font-size-standard);
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -67,21 +66,17 @@ align-items: center;
 gap: 0.25rem;
 }
 
-
-
  header {
   background: var(--secondary-color, #92817A);
   color: var(--tertiary-color);
   font-family: var(--header-font);
-  height: 12em;
   --font-size-title: calc(var(--font-size-standard) * 2);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  
+  height: 10em;
  }
-
+ 
 section > form {
     margin-top: calc(var(--spacing) * 8);
     padding: var(--spacing);
@@ -90,7 +85,6 @@ section > form {
     section {
       display: flex;
       justify-content: center;
-      flex: 1;
     }
 
 
@@ -108,35 +102,33 @@ section > form {
       color: var(--tertiary-color);
       background-color: var(--secondary-color);
       border: none;
-      margin-top: 2rem;
+      margin-top: 1rem;
       display: block;
+  
     }
 
      #submit:hover {
       background-color: var(--hover-color);
       color: var(--tertiary-color);
+
     }
 
     .message {
-      display:flex;
+      display:none;
       justify-content: center;
   
     }
 
-
-
-    h4 {
+    h5 {
       border: 1px solid var(--tertiary-color);
       color: var(--quaternary-color);
       border-radius: 5px;
       text-align: center;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;    
       background-color: var(--tertiary-color);
-      padding: 10px;
-      margin-top: var(--spacing);
+      padding: 5px;
       font-family: var(--text-font);
       animation: 3s ease-in-out disappear forwards;
-
     }
     
     input, textarea {
@@ -145,6 +137,15 @@ section > form {
       background-color: #D7D7D7;
       margin: var(--spacing);
       padding: 10px;
+    }
+
+    input:valid:hover {
+      border: 1px solid green;
+      
+    }
+
+    input:invalid:hover {
+      border: 1px dashed red;
     }
     
     textarea {
@@ -160,13 +161,18 @@ section > form {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
     }
     
     .links {
+      width: 100%;
       display: flex;
+      /* justify-content: space-between; */
       align-items: center;
-      gap: 1rem;
-      padding-left: 1rem;
+      gap: 2rem;
+      padding: 0 1rem;
     }
     
     .lien {
@@ -175,12 +181,26 @@ section > form {
       padding-top: 2%;
     }
     
-    footer div div i {
-      width: 90%;
+    a:link 
+    { 
+     text-decoration: none; 
+    } 
+    
+    .nouscontacter a {
+      color: var(--black);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-align:left;
+      gap: 0.5rem;
+    }
+    
+    .nouscontacter p {
+      font-size: calc(var(--font-size-standard) * 0.60);
     }
     
     .wildcodeschool {
-      width: 4rem;
+      width: 50px;
       height: auto;
     }
     
@@ -209,6 +229,10 @@ section > form {
       font-size: 15px ;
       
     }
+
+    #submit {
+      margin-top: 1.5rem;
+    }
      }
      
 
@@ -228,41 +252,40 @@ section > form {
       nav p {
         font-size: calc(var(--font-size-standard) * 3);
       }
-      .lien {
-        width: 4rem;
-      }
-    
-      .links {
-        margin-right: calc(var(--spacing) * 2);
-      }
-    
-      .wildcodeschool {
-        width: 8rem;
-      }
-    
-      .adresse_copyright {
-        font-family: var(--header-font);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-grow: 1;
-      }
-    
-      .adresse_copyright p {
-        font-size: calc(var(--font-size-standard) * 0.85);
-      }
-    
-      #copyright {
-        width: calc(100% / 2);
-        padding: 5%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding-bottom: 0%;
-      }
-      footer {
-        height: auto;
-      }
-      }
-    
-  
+        .lien {
+           width: 4rem;
+         }
+       
+         .links {
+           width: 40%; 
+           margin-right: calc(var(--spacing) * 2);
+         }
+       
+         .wildcodeschool {
+           width: 8rem;
+         }
+       
+         .adresse_copyright {
+           width: 60%; 
+           font-family: var(--header-font);
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           flex-grow: 1;
+           padding-left: 5%;
+         }
+       
+         .adresse_copyright p {
+           font-size: calc(var(--font-size-standard) * 0.85);
+         }
+       
+         #copyright {
+           width: calc(100% / 2);
+           padding: 5%;
+           display: flex;
+           justify-content: flex-end;
+           align-items: flex-end;
+           padding-bottom: 0%;
+         }
+       }
+      
