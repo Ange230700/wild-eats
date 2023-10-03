@@ -40,4 +40,8 @@
     background: #d9d9d9;
     border-radius: 0.75rem;
   }
+
+  .typesDesktop .type div input[type="checkbox"]:checked::before {
+    background: var(--primary-color);
+  }
 }
