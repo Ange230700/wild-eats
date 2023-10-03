@@ -41,7 +41,7 @@ const generateRestaurant = () => {
 
             }
 
-            else if (inputCheckbox.value === cardRestaurants[i].category) {
+            else if (!inputCheckbox.checked || (inputCheckbox.checked && )) {
                 const cardHtml = createCard(
                     cardRestaurants[i].restaurantName,
                     cardRestaurants[i].image,

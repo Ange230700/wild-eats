@@ -27,7 +27,7 @@
     font-size: 1rem;
   }
 
-  .typesDesktop .type div input[type="checkbox"] {
+  /* .typesDesktop .type div input[type="checkbox"] {
     appearance: none;
     position: relative;
   }
@@ -43,5 +43,5 @@
 
   .typesDesktop .type div input[type="checkbox"]:checked::before {
     background: var(--primary-color);
-  }
+  } */
 }
