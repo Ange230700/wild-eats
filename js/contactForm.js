@@ -14,4 +14,5 @@ form.addEventListener("submit", (event) =>  {
         const messageSend = document.createElement("h5")
         messageSend.innerHTML = "✅ Message envoyé! Nous vous recontacterons bientôt"
         message.append(messageSend)
-} )
+
+})
