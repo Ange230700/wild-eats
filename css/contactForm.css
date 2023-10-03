@@ -147,11 +147,12 @@ section > form {
       padding: 10px;
     }
 
-    input:valid {
+    input:valid:hover {
       border: 1px solid green;
+      
     }
-    
-    input:invalid {
+
+    input:invalid:hover {
       border: 1px dashed red;
     }
     
