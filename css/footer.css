@@ -6,10 +6,12 @@ footer {
 }
 
 .links {
+  width: 100%;
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
-  gap: 1rem;
-  padding-left: 1rem;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
 .lien {
@@ -18,9 +20,26 @@ footer {
   padding-top: 2%;
 }
 
+a:link 
+{ 
+ text-decoration: none; 
+} 
+
+.nouscontacter a {
+  color: var(--black);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align:left;
+  gap: 0.5rem;
+}
+
+.nouscontacter p {
+  font-size: calc(var(--font-size-standard) * 0.60);
+}
 
 .wildcodeschool {
-  width: 10px;
+  width: 50px;
   height: auto;
 }
 
@@ -29,12 +48,13 @@ footer {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
-  .lien {
+@media screen and (min-width: 772px) {
+ .lien {
     width: 4rem;
   }
 
   .links {
+    width: 40%; 
     margin-right: calc(var(--spacing) * 2);
   }
 
@@ -43,11 +63,13 @@ footer {
   }
 
   .adresse_copyright {
+    width: 60%; 
     font-family: var(--header-font);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
+    padding-left: 5%;
   }
 
   .adresse_copyright p {

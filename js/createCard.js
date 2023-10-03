@@ -32,7 +32,7 @@ function createCard(restaurantName, image, link, category, address, takeaway, pr
       </div>
       <div class="block-card-text">
           <div class="box-title-euro-link">
-          <div>
+          <div class="restaurantname-div">
               <p class="restaurant-title">${restaurantName}</p>
           </div>
           <div>
