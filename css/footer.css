@@ -8,16 +8,14 @@ footer {
 .links {
   width: 100%;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
-  gap: 2rem;
+  gap: 1.8rem;
   padding: 0 1rem;
 }
 
-.lien {
-  width: 2rem;
+.link {
   height: auto;
-  padding-top: 2%;
+  padding: 0.4rem 0 0.4rem 0;
 }
 
 a:link 
@@ -48,19 +46,19 @@ a:link
   display: none;
 }
 
-@media screen and (min-width: 772px) {
- .lien {
-    width: 4rem;
-  }
+.wildcodeschool-logo {
+  width: 5rem;
+  display: flex;
+}
 
+/*version desktop*/
+@media screen and (min-width: 772px) {
   .links {
     width: 40%; 
     margin-right: calc(var(--spacing) * 2);
   }
 
-  .wildcodeschool {
-    width: 8rem;
-  }
+  
 
   .adresse_copyright {
     width: 60%; 
