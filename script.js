@@ -8,9 +8,9 @@ const inputText = document.querySelector(`#searchInput`);
 const typeOfFood = document.querySelector(`.filterButton`);
 const pricing = document.querySelector(`.filterPrice`);
 const notes = document.querySelector(`.filterNotes`);
-const inputCheckboxes = document.querySelectorAll('.type input[type="checkbox"]');
+const inputCheckbox = document.querySelector('.type input[type="checkbox"]');
 
-// console.log(inputCheckbox);
+console.log(inputCheckbox);
 
 const generateRestaurant = () => {
 
@@ -41,29 +41,21 @@ const generateRestaurant = () => {
 
             }
 
-        }
-    }
-
-    for (const inputCheckbox of inputCheckboxes) {
-        // console.log(inputCheckbox.checked)
-        if (
-            (inputCheckbox.checked && cardRestaurants[i].category === inputCheckbox.value) || (inputCheckbox.checked && cardRestaurants[i].price === parseInt(inputCheckbox.value)) || (inputCheckbox.checked && cardRestaurants[i].note === parseInt(inputCheckbox.value))
-
-        ) {
-            const cardHtml = createCard(
-                cardRestaurants[i].restaurantName,
-                cardRestaurants[i].image,
-                cardRestaurants[i].link,
-                cardRestaurants[i].category,
-                cardRestaurants[i].address,
-                cardRestaurants[i].takeaway,
-                cardRestaurants[i].price,
-                cardRestaurants[i].note
-            )
-            cards.innerHTML += cardHtml;
+            else if (!inputCheckbox.checked || (inputCheckbox.checked && )) {
+                const cardHtml = createCard(
+                    cardRestaurants[i].restaurantName,
+                    cardRestaurants[i].image,
+                    cardRestaurants[i].link,
+                    cardRestaurants[i].category,
+                    cardRestaurants[i].address,
+                    cardRestaurants[i].takeaway,
+                    cardRestaurants[i].price,
+                    cardRestaurants[i].note
+                )
+                cards.innerHTML += cardHtml;
+            }
 
         }
-
     }
 }
 
@@ -78,11 +70,7 @@ pricing.addEventListener(`input`, generateRestaurant);
 notes.addEventListener(`input`, generateRestaurant);
 
 // inputCheckboxes.addEventListener("input", generateRestaurant);
-
-inputCheckboxes.forEach(inputCheckbox => {
-    inputCheckbox.addEventListener('input', generateRestaurant);
-})
-// inputCheckboxes.addEventListener("click", generateRestaurant);
+inputCheckbox.addEventListener("click", generateRestaurant);
 
 generateRestaurant();
 
