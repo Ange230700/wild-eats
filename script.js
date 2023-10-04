@@ -1,23 +1,20 @@
 import createCard from "./js/createCard.js"
 import cardRestaurants from "./js/cardRestaurants.js";
 
-//selecting cards container
+
 const cards = document.querySelector(".cards");
-//parametre (restaurantName, image, link, category, address, takeaway, price, star)
 const inputText = document.querySelector(`#searchInput`);
 const typeOfFood = document.querySelector(`.filterButton`);
 const pricing = document.querySelector(`.filterPrice`);
 const notes = document.querySelector(`.filterNotes`);
-const inputCheckbox = document.querySelector('.type input[type="checkbox"]');
-
-console.log(inputCheckbox);
+const inputCheckboxes = document.querySelectorAll('input[name="typeResto"]');
+// const inputCheckboxes = document.querySelector('.type input[type="checkbox"]');
 
 const generateRestaurant = () => {
-const inputCheckboxes = document.querySelectorAll('input[name="typeResto"]');
-//const inputCheckboxes = document.querySelectorAll('.type input[type="checkbox"]');
+    cards.innerHTML = "";
+};
 console.log(inputCheckboxes)
 
-    cards.innerHTML = "";
 
     cardRestaurants
     tmp = []
@@ -71,26 +68,16 @@ console.log(inputCheckboxes)
 
 const generateRestaurantOnDesktop = () => {
     cards.innerHTML = "";
-    //console.log(`J'initialise une liste de cartes vide par défaut: ${cards.innerHTML}`);
-    //let defaultCardListGenerated = true;
-    //console.log(`Je déclare un booléen à true pour savoir si je dois générer une liste de cartes par défaut: ${defaultCardListGenerated}`);
     for (const inputCheckbox of inputCheckboxes) {
        
         if (inputCheckbox.checked === false){
             //do nothing
         } else {
-            
-                //console.log(`Je parcours la liste des restaurants: ${cardRestaurants[i].category}`);
-        
-                //console.log("inputCheckbox.value => " + inputCheckbox.value)
-                //console.log("cardRestaurants[i].category => " + cardRestaurants[i].category)
-                //console.log(`Je parcours la liste des checkbox: ${inputCheckbox.value} avec la valeur ${inputCheckbox.checked}`);
                 for (let i = 0; i < cardRestaurants.length; i++) {
                 if (
                     (inputCheckbox.checked && cardRestaurants[i].category === inputCheckbox.value) || (inputCheckbox.checked && cardRestaurants[i].price === parseInt(inputCheckbox.value)) || (inputCheckbox.checked && cardRestaurants[i].note === parseInt(inputCheckbox.value))
                 ) { 
                     console.log("Je suis la" + cardRestaurants[i].restaurantName)
-                    //console.log(`Je vérifie si la checkbox est cochée: ${inputCheckbox.checked}`);
                     const cardHtml = createCard(
                         cardRestaurants[i].restaurantName,
                         cardRestaurants[i].image,
@@ -101,11 +88,7 @@ const generateRestaurantOnDesktop = () => {
                         cardRestaurants[i].price,
                         cardRestaurants[i].note
                     )
-                    //console.log(`Je génère une carte: ${document.querySelector('.block-card-image')}`);
-                    //defaultCardListGenerated = false;
-                    //console.log(`Je change le booléen à false pour ne pas générer de liste de cartes par défaut: ${defaultCardListGenerated}`);
                     cards.innerHTML += cardHtml;
-                    //console.log(`J'ajoute la carte à la liste de cartes: ${cards.innerHTML}`);
                 }
              }
         }
@@ -116,7 +99,6 @@ const generateRestaurantOnDesktop = () => {
         for (let i = 0; i < cardRestaurants.length; i++) {
             
                 console.log("Je suis la" + cardRestaurants[i].restaurantName)
-                //console.log(`Je vérifie si la checkbox est cochée: ${inputCheckbox.checked}`);
                 const cardHtml = createCard(
                     cardRestaurants[i].restaurantName,
                     cardRestaurants[i].image,
