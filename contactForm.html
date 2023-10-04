@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="fr">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./css/contactForm.css">
+    <link rel="stylesheet" href="./css/contactForm.css">
     <title>Formulaire</title>
-</head>
-<body>
-      <nav>
-        <div class="logoWE">
-          <a href="index.html"><img src="./images/wLogo.png" alt="logo" /></a>
-          <p>Eats</p>
-        </div>
-      </nav>
-          <header>
-            <h1>Nous contacter</h1>
-          </header>
-          <div class="message"></div>
-      <section>
-        <form id="contactForm">
-          <label for="name" >Prénom Nom</label><br>
-            <input type="text" id="name"><br>
-          <label for="email" >Email</label><br>
-            <input type="email" id="email"><br>
-          <label for="message">Message</label><br>
-              <textarea name="message" id="textarea" cols="40" rows="10"></textarea>
-            <input type="submit" id="submit" value="Envoyer">
-              <script src="/js/contactForm.js"></script>
-        </form>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logoWE">
+        <a href="index.html"><img src="./images/wLogo.png" alt="logo"></a>
+        <p>Eats</p>
+      </div>
+    </nav>
+    
+    <header>
+      <h1>Nous contacter</h1>
+    </header>
+        <div class="message"></div>
+    <section>
+      <form id="contactForm">
+        <label for="name" >Prénom Nom</label><br>
+          <input type="text" id="name" required><br>
+        <label for="email" >Email</label><br>
+          <input type="email" id="email" required><br>
+        <label for="textarea">Message</label><br>
+            <textarea name="message" id="textarea" cols="40" rows="10" required></textarea>
+          <input type="submit" id="submit" value="Envoyer">
+            <script src="/js/contactForm.js"></script>
+      </form>
       </section>
       <footer>
         <div class="links">
@@ -72,9 +74,12 @@
         </div>
         
       </footer>
-      <script
-      src="https://kit.fontawesome.com/5e17021a5c.js"
-      crossorigin="anonymous"
-    ></script>
-</body>
-</html>
+       <script type="module" src="./script.js"></script>
+        <script src="./js/map.js"></script>
+        <script src="./js/filter.js"></script>
+        <script
+          src="https://kit.fontawesome.com/5e17021a5c.js"
+          crossorigin="anonymous"
+        ></script>
+    </body>
+  </html>

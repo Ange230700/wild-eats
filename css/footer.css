@@ -15,7 +15,7 @@ footer {
 
 .link {
   height: auto;
-  padding: 0.4rem 0 0.4rem 0;
+  padding: var(--spacing) 0;
 }
 
 a:link 

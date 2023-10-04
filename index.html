@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Wild Eats</title>
   </head>
+  
   <body>
     <nav>
       <div class="logoWE">
@@ -19,10 +20,6 @@
         <h1>Retrouvez les meilleurs restos près du campus !</h1>
         <div class="search-bar">
           <input type="text" id="searchInput" placeholder="Que désirez-vous ?">
-          <button id="searchButton">
-            <img src="./images/searchButtonIcon.png" alt="Search Icon">
-            <p class="buttonName">Lancer la recherche</p>
-          </button>
         </div>
       </div>
     </section>
@@ -32,12 +29,13 @@
         <p>Types de restaurant</p>
 
         <div class="italian">
-          <input type="checkbox"
+          <input
+            type="checkbox"
             class="input-checkbox"
             name="typeResto"
             value="Italien"
             id="italian"
-          >
+          />
           <label for="italian">Italien</label>
         </div>
 
@@ -47,7 +45,7 @@
             name="typeResto"
             value="Asiatique"
             id="asian"
-          >
+          />
           <label for="asian">Asiatique</label>
         </div>
 
@@ -57,7 +55,7 @@
             name="typeResto"
             value="Végétarien"
             id="veggie"
-          >
+          />
           <label for="veggie">Végétarien</label>
         </div>
 
@@ -67,7 +65,7 @@
             name="typeResto"
             value="Bistro"
             id="bistro"
-          >
+          />
           <label for="bistro">Bistro</label>
         </div>
       </div>
@@ -81,7 +79,7 @@
             name="prix"
             value="abordable"
             id="affordable"
-          >
+          />
           <label for="affordable">€</label>
         </div>
 
@@ -91,12 +89,12 @@
             name="prix"
             value="moins-abordable"
             id="less-affordable"
-          >
+          />
           <label for="less-affordable">€€</label>
         </div>
 
         <div class="expensive">
-          <input type="checkbox" name="prix" value="cher" id="expensive">
+          <input type="checkbox" name="prix" value="cher" id="expensive" />
           <label for="expensive">€€€</label>
         </div>
       </div>
@@ -105,7 +103,7 @@
         <p>Notes</p>
 
         <div class="oneStar">
-          <input type="checkbox" name="note" value="uneEtoile" id="oneStar">
+          <input type="checkbox" name="note" value="uneEtoile" id="oneStar" />
           <label for="oneStar">⭐</label>
         </div>
 
@@ -115,7 +113,7 @@
             name="note"
             value="deuxEtoiles"
             id="twoStars"
-          >
+          />
           <label for="twoStars">⭐⭐</label>
         </div>
 
@@ -125,7 +123,7 @@
             name="note"
             value="troisEtoiles"
             id="threeStars"
-          >
+          />
           <label for="threeStars">⭐⭐⭐</label>
         </div>
       </div>
@@ -205,7 +203,7 @@
           <p>&copy wilders 2023</p>
         </div>
       </div>
-      
+
     </footer>
 
     <script type="module" src="./script.js"></script>
@@ -216,5 +214,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-  
 </html>
