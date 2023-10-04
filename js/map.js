@@ -11,37 +11,25 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: center,
     map: map,
-    title: 'Wild Code School',
+    title: "Wild Code School",
   });
-
 
   const styles = {
     default: [],
     hide: [
-    //   {
-    //     featureType: "all",
-    //     elementType: "all",
-    //     stylers: [{ visibility: "off" }],
-    //   },
-
       {
         featureType: "poi.business",
         elementType: "all",
         stylers: [{ visibility: "on" }],
       },
 
-
-
-      
-    //   {
-    //     featureType: "transit",
-    //     elementType: "labels.icon",
-    //     stylers: [{ visibility: "off" }],
-    //   },
+      {
+        featureType: "poi.school",
+        elementType: "all",
+        stylers: [{ visibility: "on" }],
+      },
     ],
   };
 
   map.setOptions({ styles: styles["hide"] });
-
-
 }
