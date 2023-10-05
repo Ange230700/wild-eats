@@ -68,3 +68,10 @@
   font-size: calc(var(--font-size-standard) * 0.6); /* 12px */
   border-radius: 0;
 }
+
+.no-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}

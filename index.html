@@ -186,18 +186,118 @@
             <i class="fa-brands fa-instagram fa-2xl" style="color: #464646"></i></a>
         </div>
 
-        <div class="link">
-          <a href="https://www.facebook.com/WildCodeSchool/" target="_blank">
-            <i class="fa-brands fa-square-facebook fa-2xl" style="color: #464646"></i>
-          </a>
+        <div class="type">
+          <p>Prix</p>
+
+          <div class="cheap">
+            <input type="checkbox" name="prix" value="1" id="cheap" />
+            <label for="cheap">€</label>
+          </div>
+
+          <div class="affordable">
+            <input type="checkbox" name="prix" value="2" id="affordable" />
+            <label for="affordable">€€</label>
+          </div>
+
+          <div class="expensive">
+            <input type="checkbox" name="prix" value="3" id="expensive" />
+            <label for="expensive">€€€</label>
+          </div>
         </div>
 
-        <div class="link">
-          <a
-            href="https://www.wildcodeschool.com/fr-FR/campus/a-distance?utm_source=google&utm_medium=cpc&utm_campaign=brand&utm_term=wild%20code%20school%20formation&utm_campaign=FR+-+campagne+marque&utm_source=adwords&utm_medium=ppc&hsa_acc=4421706736&hsa_cam=14821000047&hsa_grp=136646397004&hsa_ad=629161360522&hsa_src=g&hsa_tgt=aud-762721332217:kwd-1843089244925&hsa_kw=wild%20code%20school%20formation&hsa_mt=p&hsa_ver=3&hsa_net=adwords&gclid=Cj0KCQjw9rSoBhCiARIsAFOiplnZlCQJ9pYcOtDogbe65lclFpy9O6h0jAsmLHvzWtZzYNPlzSBJI98aAhVOEALw_wcB"
-            target="_blank"
-            ><img src="images/wildCodeSchoolLogoEntire.png" alt="logo" class="wildcodeschool-logo">
-          </a>
+        <div class="type">
+          <p>Notes</p>
+
+          <div class="oneStar">
+            <input type="checkbox" name="note" value="1" id="oneStar" />
+            <label for="oneStar">⭐</label>
+          </div>
+
+          <div class="twoStars">
+            <input type="checkbox" name="note" value="2" id="twoStars" />
+            <label for="twoStars">⭐⭐</label>
+          </div>
+
+          <div class="threeStars">
+            <input type="checkbox" name="note" value="3" id="threeStars" />
+            <label for="threeStars">⭐⭐⭐</label>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <section class="typesMobile">
+          <div class="dropdown">
+            <select class="filterButton" name="type">
+              <option value="All">Types</option>
+              <option value="Italien">Italien</option>
+              <option value="Asiatique">Asiatique</option>
+              <option value="Végétarien">Végétarien</option>
+              <option value="Bistro">Bistro</option>
+            </select>
+          </div>
+          <div class="dropdown">
+            <select class="filterPrice" name="price">
+              <option value="0">Prix</option>
+              <option value="1">€</option>
+              <option value="2">€€</option>
+              <option value="3">€€€</option>
+            </select>
+          </div>
+          <div class="dropdown">
+            <select class="filterNotes" name="note">
+              <option value="0">Notes</option>
+              <option value="1">⭐</option>
+              <option value="2">⭐⭐</option>
+              <option value="3">⭐⭐⭐</option>
+            </select>
+          </div>
+        </section>
+        <section class="cards">
+          <!--createCard with JS files-->
+        </section>
+      </main>
+
+      <footer>
+        <div class="links">
+          <div class="lien instagram">
+            <a
+              href="https://instagram.com/wildcodeschoolofficial?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #464646"
+              ></i
+            ></a>
+          </div>
+
+          <div class="lien facebook" href="">
+            <a href="https://www.facebook.com/WildCodeSchool/" target="_blank">
+              <i
+                class="fa-brands fa-square-facebook fa-2xl"
+                style="color: #464646"
+              ></i>
+            </a>
+          </div>
+
+          <div class="lien wildcodeschool">
+            <a
+              href="https://www.wildcodeschool.com/fr-FR/campus/a-distance?utm_source=google&utm_medium=cpc&utm_campaign=brand&utm_term=wild%20code%20school%20formation&utm_campaign=FR+-+campagne+marque&utm_source=adwords&utm_medium=ppc&hsa_acc=4421706736&hsa_cam=14821000047&hsa_grp=136646397004&hsa_ad=629161360522&hsa_src=g&hsa_tgt=aud-762721332217:kwd-1843089244925&hsa_kw=wild%20code%20school%20formation&hsa_mt=p&hsa_ver=3&hsa_net=adwords&gclid=Cj0KCQjw9rSoBhCiARIsAFOiplnZlCQJ9pYcOtDogbe65lclFpy9O6h0jAsmLHvzWtZzYNPlzSBJI98aAhVOEALw_wcB"
+              target="_blank"
+              ><img
+                src="images/wildCodeSchoolLogoEntire.png"
+                alt="logo"
+                width="70em"
+            /></a>
+          </div>
+
+          <div class="lien nouscontacter">
+            <a href="./contactForm.html">
+              <i class="fa-solid fa-envelope fa-2xl" style="color: #464646"></i>
+              <p>Nous contacter</p>
+            </a>
+          </div>
         </div>
 
         <div class="link nouscontacter">
