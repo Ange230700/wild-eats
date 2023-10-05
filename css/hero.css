@@ -12,7 +12,7 @@
 .heroImage {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 4rem;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -74,7 +74,7 @@ input[type="text"] {
   }
 
   .hero .search-bar {
-    margin-top: 20px;
+    margin-top: -15px;
     display: flex;
     flex-direction: column;
   }
