@@ -1,0 +1,53 @@
+@media screen and (600px < width) {
+  .typesMobile {
+    display: none;
+  }
+
+  .typesDesktop {
+    grid-area: aside;
+    background-color: var(--quaternary-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    padding: 1.5rem;
+  }
+
+  .typesDesktop .type p {
+    color: var(--tertiary-color);
+  }
+
+  .typesDesktop .type div {
+    display: flex;
+    align-items: center;
+    gap: 0.88rem;
+  }
+
+  .typesDesktop .type div label {
+    font-size: 1rem;
+  }
+
+  .no-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .typesDesktop .type div input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+  }
+
+  .typesDesktop .type div input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #d9d9d9;
+    border-radius: 0.75rem;
+  }
+
+  .typesDesktop .type div input[type="checkbox"]:checked::before {
+    background: var(--primary-color);
+  } */
+}

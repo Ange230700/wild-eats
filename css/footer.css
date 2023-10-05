@@ -1,0 +1,86 @@
+footer {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.link {
+  height: auto;
+  padding: var(--spacing) 0;
+}
+
+a:link 
+{ 
+ text-decoration: none; 
+} 
+
+.nouscontacter a {
+  color: var(--black);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align:left;
+  gap: 0.5rem;
+}
+
+.nouscontacter p {
+  font-size: calc(var(--font-size-standard) * 0.60);
+}
+
+.wildcodeschool {
+  width: 50px;
+  height: auto;
+}
+
+.adresse_copyright {
+  height: 100%;
+  display: none;
+}
+
+.wildcodeschool-logo {
+  width: 5rem;
+  display: flex;
+}
+
+/*version desktop*/
+@media screen and (min-width: 772px) {
+  .links {
+    width: 40%; 
+    margin-right: calc(var(--spacing) * 2);
+  }
+
+  
+
+  .adresse_copyright {
+    width: 60%; 
+    font-family: var(--header-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 5%;
+  }
+
+  .adresse_copyright p {
+    font-size: calc(var(--font-size-standard) * 0.85);
+  }
+
+  #copyright {
+    width: calc(100% / 2);
+    padding: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 0%;
+  }
+}

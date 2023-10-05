@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins&display=swap");
+
+.cards {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: calc(var(--spacing) * 2);
+    justify-items: center;
+    /* height: 100%; */
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: inherit;
+
+  margin-top: calc(var(--spacing) * 2);
+  border-radius: 10px;
+  width: 90%;
+  height: 250px;
+  box-shadow: 0.5px 0.5px 10px #ddd1bc;
+  background-color: var(--tertiary-color);
+}
+
+.card:hover {
+  transform: scale(
+    1.01
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: 2px 2px 15px #a8a297;
+}
+
+.block-card-image {
+  height: 60%;
+  position: relative;
+}
+
+.category {
+  position: absolute;
+  right: calc(var(--spacing) * 0.5);
+  bottom: calc(var(--spacing) * 0.5);
+  font-size: calc(var(--font-size-standard) * 0.5);
+  padding: calc(var(--spacing) * 0.5) calc(var(--spacing) * 1.5);
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+}
+
+.restaurant-photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.block-card-text {
+  padding: calc(var(--spacing) * 1.2) calc(var(--spacing) * 1.2);
+}
+
+.restaurantname-div {
+  width: 60%;
+}
+.restaurant-title {
+  font-size: 1.1rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fa-star {
+  color: #e6c723;
+  font-size: 0.9rem;
+}
+
+.card-takeaway {
+  font-size: 0.8rem;
+}
+
+.card-adress {
+  font-size: 0.8rem;
+}
+
+.fa-link {
+  color: var(--secondary-color);
+}
+
+.fa-link:hover {
+  color: #9f9d9c;
+}
+
+.box-title-euro-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-takeaway-icon-text {
+  display: flex;
+}
+
+.fa-square-check {
+  padding-right: calc(var(--spacing) * 0.5);
+}
+
+.box-takeaway-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
