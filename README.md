@@ -84,8 +84,6 @@ Github pages link of the website: ... (to be updated)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=javascript&logoColor=white)
 
-### What we learned / Ce que nous avons appris
+## Authors / Auteurs | ![github](https://img.shields.io/badge/github-%232671E5.svg?style=for-the-badge&logo=github&logoColor=white)
 
-### Useful resources / Ressources utiles
 
-## Authors / Auteurs
