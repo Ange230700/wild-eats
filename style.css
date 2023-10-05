@@ -74,10 +74,10 @@ main {
     max-width: 100vw;
     display: grid;
     grid-template-areas:
-      "nav nav nav nav"
-      "hero hero hero hero"
-      "aside main main main"
-      "footer footer footer footer";
+      "nav nav nav nav nav nav"
+      "hero hero hero hero hero hero"
+      "aside main main main main main"
+      "footer footer footer footer footer footer";
     grid-template-rows: 10vh auto 1fr auto;
   }
 

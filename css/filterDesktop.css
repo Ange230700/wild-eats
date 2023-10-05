@@ -9,7 +9,7 @@
     color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: var(--spacing);
     padding: 1.5rem;
   }
 
@@ -27,7 +27,14 @@
     font-size: 1rem;
   }
 
-  .typesDesktop .type div input[type="checkbox"] {
+  .no-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  /* .typesDesktop .type div input[type="checkbox"] {
     appearance: none;
     position: relative;
   }
@@ -40,4 +47,8 @@
     background: #d9d9d9;
     border-radius: 0.75rem;
   }
+
+  .typesDesktop .type div input[type="checkbox"]:checked::before {
+    background: var(--primary-color);
+  } */
 }
