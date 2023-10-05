@@ -87,3 +87,8 @@ Github pages link of the website: ... (to be updated)
 ## Authors / Auteurs | ![github](https://img.shields.io/badge/github-%232671E5.svg?style=for-the-badge&logo=github&logoColor=white)
 
 
+- [Akane FUKUI](https://github.com/akhmm)
+- [Caroline GALLIX](https://github.com/CarolineG85)
+- [Sissis UI](https://github.com/sissis02)
+- [Karim REJANI](https://github.com/karimrjn)
+- [Ange KOUAKOU](https://github.com/Ange230700)
