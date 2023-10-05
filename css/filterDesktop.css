@@ -9,7 +9,7 @@
     color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: var(--spacing);
     padding: 1.5rem;
   }
 
@@ -25,6 +25,13 @@
 
   .typesDesktop .type div label {
     font-size: 1rem;
+  }
+
+  .no-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   /* .typesDesktop .type div input[type="checkbox"] {
