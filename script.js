@@ -97,6 +97,7 @@ const generateRestaurantOnDesktop = () => {
         }
         else {
             temporaryArray = [];
+            cards.innerHTML = `<p class="no-result"> Aucun résultat</p>`
         }
     }
 
@@ -118,6 +119,7 @@ const generateRestaurantOnDesktop = () => {
         }
         else {
             temporaryArray2 = [];
+            cards.innerHTML = `<p class="no-result"> Aucun résultat</p>`
         }
     }
     console.log("at leastOne checked 2" + atleastOneChecked);
@@ -158,78 +160,23 @@ const generateRestaurantOnDesktop = () => {
     }
 }
 
-    //     if (inputCheckbox.checked !== false) {
-    //         for (let i = 0; i < cardRestaurants.length; i++) {
-    //             if (cardRestaurants[i].category === inputCheckbox.value) {
 
-    //                 temporaryArray.push(cardHtml);
-    //                 // cards.innerHTML += cardHtml;
-    //             }
-    //         }
-    //         if (temporaryArray.length === 0) {
-
-    //                     temporaryArray = cardRestaurants;
-    //         }
-
-    //         for(priceCheckbox)
-
-    //                 for (let i = 0; i < temporaryArray.length; i++) {
-    //                     if (temporaryArray[i].note === parseInt(inputCheckbox.value)) {
-
-    //                         temporaryArray2.push(cardHtml);
-    //                         // cards.innerHTML += cardHtml;
-    //                     }
-    //                 }
-    //                 if (temporaryArray2.length === 0) {
-
-    //                     temporaryArray2 = temporaryArray
+inputText.addEventListener(`input`, generateRestaurantOnMobile);
+typeOfFood.addEventListener(`input`, generateRestaurantOnMobile);
+pricing.addEventListener(`input`, generateRestaurantOnMobile);
+notes.addEventListener(`input`, generateRestaurantOnMobile);
+generateRestaurantOnMobile();
 
 
-    //                 }
-
-    //                 for (noteChekboxes)
-
-    //                     if(inputCheckbox.checked !== false) {
-    //                     for (let i = 0; i < temporaryArray2.length; i++) {
-    //                         if(note === temporaryArray2.note)
-
-    //                         temporaryArray3.push(temporaryArray2[i])
-    //                     }
-    //                 }
-    //                 if(temporaryArray3.length === 0) {
-    //                     temporaryArray3 = temporaryArray2
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     for(temporaryArray3)
-    //         cardhtml = createCard
-    // }
-
-
-
-const viewportWidth = window.innerWidth;
-
-if (viewportWidth < 600) {
-    inputText.addEventListener(`input`, generateRestaurantOnMobile);
-    typeOfFood.addEventListener(`input`, generateRestaurantOnMobile);
-    pricing.addEventListener(`input`, generateRestaurantOnMobile);
-    notes.addEventListener(`input`, generateRestaurantOnMobile);
-    generateRestaurantOnMobile();
+for (const inputCheckbox of inputCheckboxesType) {
+    inputCheckbox.addEventListener(`input`, generateRestaurantOnDesktop);
 }
-
-else {
-    for (const inputCheckbox of inputCheckboxesType) {
-        inputCheckbox.addEventListener(`input`, generateRestaurantOnDesktop);
-    }
-    for (const inputCheckbox of inputCheckboxesPrice) {
-        inputCheckbox.addEventListener(`input`, generateRestaurantOnDesktop);
-    }
-    for (const inputCheckbox of inputCheckboxesNote) {
-        inputCheckbox.addEventListener(`input`, generateRestaurantOnDesktop);
-    }
-    generateRestaurantOnDesktop();
+for (const inputCheckbox of inputCheckboxesPrice) {
+    inputCheckbox.addEventListener(`input`, generateRestaurantOnDesktop);
 }
+for (const inputCheckbox of inputCheckboxesNote) {
+    inputCheckbox.addEventListener(`input`, generateRestaurantOnDesktop);
+}
+generateRestaurantOnDesktop();
 
 
