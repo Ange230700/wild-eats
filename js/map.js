@@ -8,7 +8,7 @@ function initMap() {
 
   const map = new google.maps.Map(selector, options);
 
-  const imageWcs = "./../images/wcsiconmarker.png";
+  const imageWcs = "https://raw.githubusercontent.com/Ange230700/wild-eats/main/images/wcsiconmarker.png";
   new google.maps.Marker({
     position: center,
     map: map,
