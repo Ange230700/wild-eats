@@ -72,9 +72,9 @@ The site was designed with: ![Figma](https://img.shields.io/badge/figma-%23F24E1
 
 ### Links / Liens
 
-Github pages link of the website: ... (to be updated)
+Github pages link of the website: [Wild Eats](https://ange230700.github.io/wild-eats/)
 
-> _Lien de la page Github du site web :_ ... (à mettre à jour)
+> _Lien de la page Github du site web :_ [Wild Eats](https://ange230700.github.io/wild-eats/)
 
 ## Our process / Notre démarche
 
