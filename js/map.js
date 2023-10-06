@@ -8,7 +8,7 @@ function initMap() {
 
   const map = new google.maps.Map(selector, options);
 
-  const imageWCS = "../images/wcslogomarker.png";
+  const imageWCS = "images/wcslogomarker.png";
   const wcsMarker = new google.maps.Marker({
     position: center,
     map: map,
