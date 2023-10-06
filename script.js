@@ -70,6 +70,8 @@ const generateRestaurantOnMobile = () => {
 
 
 const generateRestaurantOnDesktop = () => {
+    console.log("yes");
+
     cards.innerHTML = "";
     let temporaryArray = [];
     let temporaryArray2 = [];

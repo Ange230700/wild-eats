@@ -8,14 +8,13 @@ function initMap() {
 
   const map = new google.maps.Map(selector, options);
 
-  const imageWCS = "../images/WCSlogoMarker.png";
-  const wcsMarker = new google.maps.Marker({
+  const imageWcs = "./../images/wcsiconmarker.png";
+  new google.maps.Marker({
     position: center,
     map: map,
-    icon: imageWCS,
+    icon: imageWcs,
     title: "Wild Code School",
   });
-
 
   const styles = {
     default: [],
